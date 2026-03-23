@@ -1,0 +1,63 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: interviewer-backend
+    ports:
+      - "8000:8000"
+    environment:
+      - GITHUB_TOKEN=${GITHUB_TOKEN}
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./backend/data:/app/data
+    networks:
+      - interviewer-network
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+      target: production
+    container_name: interviewer-frontend
+    ports:
+      - "3000:80"
+    environment:
+      - REACT_APP_API_URL=http://backend:8000
+    networks:
+      - interviewer-network
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+  # Alternative: Development frontend (uncomment to use)
+  # frontend-dev:
+  #   build:
+  #     context: ./frontend
+  #     dockerfile: Dockerfile
+  #     target: development
+  #   container_name: interviewer-frontend-dev
+  #   ports:
+  #     - "3000:3000"
+  #   environment:
+  #     - REACT_APP_API_URL=http://localhost:8000
+  #     - CHOKIDAR_USEPOLLING=true
+  #   volumes:
+  #     - ./frontend/src:/app/src
+  #   networks:
+  #     - interviewer-network
+  #   depends_on:
+  #     - backend
+
+networks:
+  interviewer-network:
+    driver: bridge

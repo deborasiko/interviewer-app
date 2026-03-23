@@ -165,3 +165,131 @@ Interviewer-app/
 - **Port 3000 already in use**: The React dev server will prompt you to use a different port automatically.
 - **Module not found errors**: Run `npm install` to ensure all dependencies are installed.
 - **API connection errors**: Verify the backend is running on http://localhost:8000
+
+## Docker Deployment
+
+The project includes Docker support for easy deployment and development.
+
+### Prerequisites
+
+- Docker and Docker Compose installed on your system
+- GitHub Personal Access Token (same as for local development)
+
+### Quick Start with Docker
+
+1. **Set your GitHub token environment variable:**
+   ```powershell
+   # Windows (PowerShell)
+   $env:GITHUB_TOKEN="your_github_token_here"
+   
+   # Windows (CMD)
+   set GITHUB_TOKEN=your_github_token_here
+   
+   # Linux/macOS
+   export GITHUB_TOKEN=your_github_token_here
+   ```
+
+2. **Build and run the containers:**
+   ```bash
+   docker-compose up --build
+   ```
+
+3. **Access the application:**
+   - Frontend: http://localhost:3000
+   - Backend API: http://localhost:8000
+   - API Documentation: http://localhost:8000/docs
+
+### Docker Commands
+
+**Build images:**
+```bash
+docker-compose build
+```
+
+**Start services:**
+```bash
+docker-compose up
+```
+
+**Start services in detached mode:**
+```bash
+docker-compose up -d
+```
+
+**Stop services:**
+```bash
+docker-compose down
+```
+
+**Stop services and remove volumes (clean slate):**
+```bash
+docker-compose down -v
+```
+
+**View logs:**
+```bash
+# All services
+docker-compose logs -f
+
+# Specific service
+docker-compose logs -f backend
+docker-compose logs -f frontend
+```
+
+### Environment Variables
+
+The Docker setup uses the following environment variables:
+
+- `GITHUB_TOKEN`: Required for the backend LLM service (Azure AI Inference)
+- `REACT_APP_API_URL`: Frontend API URL (set to `http://backend:8000` in docker-compose)
+
+**Setting GITHUB_TOKEN for Docker Compose:**
+
+For PowerShell:
+```powershell
+$env:GITHUB_TOKEN="your_github_token_here"
+docker-compose up
+```
+
+For CMD:
+```cmd
+set GITHUB_TOKEN=your_github_token_here
+docker-compose up
+```
+
+For Linux/macOS:
+```bash
+export GITHUB_TOKEN=your_github_token_here
+docker-compose up
+```
+
+### Development with Docker
+
+For development, you can use the development frontend configuration by uncommenting the `frontend-dev` service in [`docker-compose.yml`](docker-compose.yml) and commenting out the production frontend service.
+
+### Docker Files
+
+- [`backend/Dockerfile`](backend/Dockerfile) - Backend Python FastAPI container
+- [`frontend/Dockerfile`](frontend/Dockerfile) - Frontend React container with multi-stage build
+- [`frontend/nginx.conf`](frontend/nginx.conf) - Nginx configuration for production frontend
+- [`docker-compose.yml`](docker-compose.yml) - Docker Compose orchestration
+
+### Container Architecture
+
+```
+┌─────────────────────────────────┐
+│      interviewer-network        │
+│  ┌───────────────────────────┐   │
+│  │   interviewer-backend    │   │
+│  │   (FastAPI - Port 8000)  │   │
+│  └───────────────────────────┘   │
+│  ┌───────────────────────────┐   │
+│  │   interviewer-frontend   │   │
+│  │   (Nginx - Port 80)       │   │
+│  └───────────────────────────┘   │
+└─────────────────────────────────┘
+         │              │
+         │              │
+    Port 8000        Port 3000
+    (Backend)       (Frontend)
+```
