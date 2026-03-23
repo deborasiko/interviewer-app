@@ -1,0 +1,92 @@
+{
+  "id": "927f9736-9397-4d89-93be-4fcda93c3852",
+  "metadata": {
+    "created_at": "2026-03-22T23:35:00.480504",
+    "completed_at": "2026-03-22T23:36:21.853685",
+    "topic": "work ethic and style",
+    "total_questions": 2,
+    "questions_asked": 2,
+    "status": "completed"
+  },
+  "qa_pairs": [
+    {
+      "number": 1,
+      "timestamp": "2026-03-22T23:35:26.007310",
+      "question": "Could you share an example of a challenging project where your work ethic and style played a crucial role in overcoming obstacles and achieving success?",
+      "answer": "In a high‑stakes product launch, a critical integration failed days before release, so I reorganized the team into rapid problem‑solving pods and personally coordinated cross‑team communication to keep everyone aligned. We not only fixed the issue in time but delivered a smoother launch than expected, and it reinforced for me how much disciplined focus and steady leadership can turn pressure into momentum."
+    },
+    {
+      "number": 2,
+      "timestamp": "2026-03-22T23:35:47.589293",
+      "question": "That sounds like an impressive achievement. Can you describe how you balance maintaining high standards and discipline in high-pressure situations while also fostering a supportive and open team environment?",
+      "answer": "I balance high standards with a supportive environment by being very clear about expectations while keeping the tone collaborative rather than punitive, even when deadlines are tight. That mix of structure and psychological safety helps people stay focused without feeling pressured, which consistently boosts both morale and performance."
+    }
+  ],
+  "transcript": "Q1: Could you share an example of a challenging project where your work ethic and style played a crucial role in overcoming obstacles and achieving success?\n\nA1: In a high‑stakes product launch, a critical integration failed days before release, so I reorganized the team into rapid problem‑solving pods and personally coordinated cross‑team communication to keep everyone aligned. We not only fixed the issue in time but delivered a smoother launch than expected, and it reinforced for me how much disciplined focus and steady leadership can turn pressure into momentum.\n\nQ2: That sounds like an impressive achievement. Can you describe how you balance maintaining high standards and discipline in high-pressure situations while also fostering a supportive and open team environment?\n\nA2: I balance high standards with a supportive environment by being very clear about expectations while keeping the tone collaborative rather than punitive, even when deadlines are tight. That mix of structure and psychological safety helps people stay focused without feeling pressured, which consistently boosts both morale and performance.\n\n",
+  "summary": {
+    "topic": "work ethic and style",
+    "question_count": 2,
+    "key_themes": [
+      "problem-solving under pressure",
+      "leadership and communication",
+      "balancing standards with team support"
+    ],
+    "summary": "The interview highlights the importance of work ethic and leadership style in overcoming challenges and achieving success. In one instance, the interviewee successfully managed a critical issue during a high-stakes product launch by restructuring the team into problem-solving pods and coordinating cross-team communication. This approach not only resolved the issue promptly but also resulted in a smoother launch than anticipated. The interviewee emphasized the role of disciplined focus and steady leadership in turning pressure into momentum. Furthermore, they described maintaining high standards and discipline in high-pressure situations by setting clear expectations and fostering a collaborative environment. This balance of structure and psychological safety was noted to enhance both morale and performance, demonstrating the effective integration of rigorous work ethic with a supportive team culture.",
+    "insights": [
+      "Effective problem-solving in high-pressure situations requires clear leadership and coordination.",
+      "A collaborative approach can be maintained without compromising on high standards.",
+      "Psychological safety in the workplace boosts team morale and performance."
+    ],
+    "follow_up_questions": [
+      "Can you provide another example where your leadership style directly influenced the outcome of a project?",
+      "How do you handle situations where team members struggle to meet high standards despite the supportive environment?"
+    ],
+    "sentiment_indicators": [
+      "disciplined focus",
+      "steady leadership",
+      "collaborative tone",
+      "boosted morale",
+      "impressive achievement"
+    ],
+    "notable_quotes": [
+      "disciplined focus and steady leadership can turn pressure into momentum",
+      "mix of structure and psychological safety helps people stay focused without feeling pressured"
+    ]
+  },
+  "analysis": {
+    "sentiment_scores": {
+      "status": "unavailable",
+      "reason": "NLTK not installed"
+    },
+    "keywords": [
+      "high",
+      "launch",
+      "team",
+      "into",
+      "than",
+      "stakes",
+      "product",
+      "critical",
+      "integration",
+      "failed"
+    ],
+    "key_phrases": [
+      "high stakes",
+      "stakes product",
+      "product launch",
+      "critical integration",
+      "integration failed"
+    ],
+    "answer_lengths": {
+      "average_words": 55.0,
+      "max_words": 62,
+      "min_words": 48,
+      "total_words": 110
+    },
+    "engagement_metrics": {
+      "total_questions": 2,
+      "total_characters": 747,
+      "completion_rate": 1.0
+    }
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "id": "aa53a0b7-7a1c-420f-984d-35d861f8166c",
+  "metadata": {
+    "created_at": "2026-03-22T23:39:38.104055",
+    "completed_at": "2026-03-22T23:41:25.155304",
+    "topic": "work ethic and style",
+    "total_questions": 2,
+    "questions_asked": 2,
+    "status": "completed"
+  },
+  "qa_pairs": [
+    {
+      "number": 1,
+      "timestamp": "2026-03-22T23:40:28.362910",
+      "question": "How do you balance staying true to your personal work style while adapting to the varying needs and expectations of different teams or projects you've worked on?",
+      "answer": "I stay true to my style by keeping my core habits—clarity, structure, and proactive communication—consistent, while adjusting the level of detail, pace, and collaboration based on what each team responds to best. That balance lets me remain authentic while still giving every group what they need to work smoothly and confidently."
+    },
+    {
+      "number": 2,
+      "timestamp": "2026-03-22T23:40:57.933234",
+      "question": "Could you share a specific example of a time when maintaining clarity and proactive communication significantly improved a team's dynamic or project outcome, and how you adapted your approach to foster that success?",
+      "answer": "In a cross‑functional project, two teams kept interpreting the same requirements differently, so I started sending short alignment summaries after every discussion to make sure everyone had the same understanding. That simple habit eliminated confusion almost immediately, and by adjusting the tone and level of detail for each group, the collaboration became smoother and the project finished ahead of schedule."
+    }
+  ],
+  "transcript": "Q1: How do you balance staying true to your personal work style while adapting to the varying needs and expectations of different teams or projects you've worked on?\n\nA1: I stay true to my style by keeping my core habits—clarity, structure, and proactive communication—consistent, while adjusting the level of detail, pace, and collaboration based on what each team responds to best. That balance lets me remain authentic while still giving every group what they need to work smoothly and confidently.\n\nQ2: Could you share a specific example of a time when maintaining clarity and proactive communication significantly improved a team's dynamic or project outcome, and how you adapted your approach to foster that success?\n\nA2: In a cross‑functional project, two teams kept interpreting the same requirements differently, so I started sending short alignment summaries after every discussion to make sure everyone had the same understanding. That simple habit eliminated confusion almost immediately, and by adjusting the tone and level of detail for each group, the collaboration became smoother and the project finished ahead of schedule.\n\n",
+  "summary": {
+    "topic": "work ethic and style",
+    "question_count": 2,
+    "key_themes": [
+      "Consistency in core habits",
+      "Adaptability to team needs",
+      "Importance of proactive communication"
+    ],
+    "summary": "The interviewee emphasizes the importance of maintaining consistent core habits such as clarity, structure, and proactive communication while being adaptable to the specific needs of different teams or projects. They balance staying true to their personal work style by making adjustments in the level of detail, pace, and collaboration based on what each team responds to best. This approach allows the individual to remain authentic and effective across varying contexts. A specific example highlighted was a cross-functional project where communication breakdowns were resolved by sending alignment summaries after discussions, which improved understanding and collaboration, leading to the project's timely completion.",
+    "insights": [
+      "Consistency in personal work habits can coexist with adaptability to team requirements.",
+      "Proactive communication is crucial in aligning team understanding and improving project outcomes.",
+      "Tailoring communication style and detail level to specific teams can enhance collaboration and efficiency."
+    ],
+    "follow_up_questions": [
+      "How do you measure the effectiveness of your communication adjustments with different teams?",
+      "Can you provide another example where your core habits were challenged by team dynamics?"
+    ],
+    "sentiment_indicators": [
+      "positive",
+      "proactive",
+      "smooth collaboration"
+    ],
+    "notable_quotes": [
+      "I stay true to my style by keeping my core habits—clarity, structure, and proactive communication—consistent, while adjusting the level of detail, pace, and collaboration based on what each team responds to best."
+    ]
+  },
+  "analysis": {
+    "sentiment_scores": {
+      "status": "unavailable",
+      "reason": "NLTK not installed"
+    },
+    "keywords": [
+      "adjusting",
+      "level",
+      "detail",
+      "collaboration",
+      "group",
+      "project",
+      "same",
+      "stay",
+      "true",
+      "style"
+    ],
+    "key_phrases": [
+      "stay true",
+      "core habits",
+      "habits clarity",
+      "clarity structure",
+      "proactive communication"
+    ],
+    "answer_lengths": {
+      "average_words": 55.5,
+      "max_words": 60,
+      "min_words": 51,
+      "total_words": 111
+    },
+    "engagement_metrics": {
+      "total_questions": 2,
+      "total_characters": 742,
+      "completion_rate": 1.0
+    }
+  }
+}
